@@ -11,11 +11,15 @@ const ironman = {
     },
 };
 
-const spiderman = structuredClone(ironman);
+console.log(ironman);
+
+
+
+/*const spiderman = structuredClone(ironman);
 
 spiderman.firstName = 'Peter';
 spiderman.lastName = 'Parker';
 spiderman.age = 22;
 spiderman.address.city = 'San josé';
 
-console.log(ironman, spiderman);
+console.log(ironman, spiderman);*/
