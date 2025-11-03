@@ -15,19 +15,25 @@
 
 // console.log(message, message2);
 
-/* function getUser() {
+interface User {
+    uid: string;
+    username: string;  //el interface pone el tipado con el que se va a regir , en este caso ambas con string
+}
+
+function getUser(): User {
     return{
         uid: 'abc-123',
         username: 'el_papi23',
     };
 }
 
-const getUser2 = () => {
-    return {
+const getUser2 = () => ({
         uid: 'hola',
         username: 'fsdsasda',
-    }
-} */
+})
+
+console.log(getUser, getUser2);
+
 
 /* function esMayorDeEdad(edad: number): boolean{
     if (edad >= 18) {
@@ -41,7 +47,7 @@ console.log(esMayorDeEdad(18)); */
 
 /* FUNCION FLECHA */
 
-const siEsMayorDeEdad = (edad: number): boolean => edad >= 18;
+/* const siEsMayorDeEdad = (edad: number): boolean => edad >= 18;
 
 console.log(siEsMayorDeEdad(17));
 
@@ -73,7 +79,7 @@ function promedio(a: number, b:number, c:number): string {
 }
 
 console.log(promedio(8,10,10));
-
+ */
 // function promedioInf(notas: Array<number>): string {
 //     let suma = 0;
 //     notas.forEach(element => {
@@ -84,7 +90,7 @@ console.log(promedio(8,10,10));
 // }
 // console.log(promedioInf([8,10,10,5]));
 
-
+/* 
 const promedio2 = (a: number, b:number, c:number): number => a + b + c 
 
 console.log(promedio2(8,10,10)/3);
@@ -102,7 +108,7 @@ console.log(aMayusculas2("lorem21"));
 
 function obtenerPares(numeros: number []): number {
     
-}
+} */
 
 
 /* const saludar = (nombre:string,puesto:string):string =>{
@@ -151,7 +157,7 @@ console.log(user, user2); */
 
 imprimirTriangulo() */
 
-function imprimirTriangulo2 (){
+/* function imprimirTriangulo2 (){
 
     
     for (let i = 1; i <= 5; i++) {
@@ -161,17 +167,10 @@ function imprimirTriangulo2 (){
         } 
         for (let j = 1; j <= i; j++) {
             resultado = resultado + "*";
-        } 
-       
-         
+        }     
        console.log(resultado);
     }
        
 } 
 
-imprimirTriangulo2() 
-        /* console.log("**");
-        console.log("***");
-        console.log("****");
-        console.log("*****"); */
-
+imprimirTriangulo2()  */
